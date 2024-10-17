@@ -1,0 +1,1 @@
+대소문자 바꾸는 코드 a가 bcd라는 str일때, a.swapcase() 하면 BCD로 바뀜
