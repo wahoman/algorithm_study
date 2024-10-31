@@ -25,3 +25,10 @@
 # [3, 2, 1, 0, 4]
 # [3, 4, 1, 0, 2]
 # 따라서 [3, 4, 1, 0, 2]를 return 합니다.
+
+
+def solution(arr,queries):
+    for i in range(len(queries)):
+        arr[queries[i][0]],arr[queries[i][1]] = arr[queries[i][1]], arr[queries[i][0]]
+    
+    return arr
