@@ -25,3 +25,13 @@
 # [1, 2, 3, 5, 4]
 # [2, 2, 4, 5, 4]
 # [3, 2, 4, 6, 4]
+
+def solution(arr,queries):
+    for j in range(len(queries)):
+        a,b,c=queries[j]
+        for i in range(a,b+1):
+            if i%c==0:
+                arr[i]+=1
+            
+    return arr
+    
