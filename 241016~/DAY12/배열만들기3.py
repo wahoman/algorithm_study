@@ -23,3 +23,10 @@
 # 따라서 이 두 배열을 앞뒤로 붙인 배열인 [2, 3, 4, 1, 2, 3, 4, 5]를 return 합니다.
 
 
+def solution(arr,intervals):
+    lst=[]
+    for char in intervals:
+        a,b=char
+        for i in range(a,b+1):
+            lst.append(arr[i])
+    return lst
