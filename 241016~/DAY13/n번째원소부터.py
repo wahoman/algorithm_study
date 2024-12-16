@@ -18,3 +18,14 @@
 # 입출력 예 #2
 
 # [5, 2, 1, 7, 5]의 두 번째 원소부터 마지막 원소까지의 모든 원소는 [2, 1, 7, 5]입니다.
+
+
+def solution(num_list,n):
+    answer=[]
+    for i in range(n-1,len(num_list)):
+        answer.append(num_list[i])
+    
+    return answer
+
+
+
