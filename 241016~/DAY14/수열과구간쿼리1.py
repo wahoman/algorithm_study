@@ -26,3 +26,31 @@
 # 2	[2,3]	[1, 3, 4, 4, 4]
 # 따라서 [1, 3, 4, 4, 4]를 return 합니다.
 
+# def solution(arr, queries):
+#     for j in range(len(queries)):
+#         for i in range(queries[j][0], queries[j][1] + 1):
+#             arr[i] = arr[i] + 1
+#     return arr
+def solution(arr,queries):
+    for char in queries:
+        a,b=char
+        for i in range(a,b+1):
+            arr[i]+=1
+            
+    return arr 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
